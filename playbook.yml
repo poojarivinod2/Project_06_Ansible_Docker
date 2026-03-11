@@ -1,7 +1,8 @@
 # deploy_docker.yml
 ---
 - name: Deploy Docker Container
-  hosts: all # Define your target hosts in your inventory
+  hosts: localhost # Define your target hosts in your inventory
+  connection: localhost
   become: true # Run tasks with elevated privileges
 
   tasks:
